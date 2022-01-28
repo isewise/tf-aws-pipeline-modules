@@ -24,11 +24,6 @@ module "s3_buckets" {
   source = "./modules/s3_buckets"
 }
 
-module "remote_state" {
-  source = "./modules/remote_state"
-
-}
-
 terraform {
   backend "s3" {
     bucket = "terraform-cicd-project-16052"
